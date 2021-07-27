@@ -40,6 +40,13 @@ public class Main {
 		String monitoredPods = PropertiesManager.getInstance().getProperty("monitoredPods");
 		LOGGER.info("monitoredPods: {}", monitoredPods);
 		DataManager dataManager = new DataManager(monitoredPods);
+
+		// **********NEW LINES ADDED
+		String TSPERSISmonitoredPods = PropertiesManager.getInstance().getProperty("TSPERSISmonitoredPods");
+		LOGGER.info("TSPERSISmonitoredPods: {}", TSPERSISmonitoredPods);
+		DataManager dataManager = new DataManager(TSPERSISmonitoredPods);
+		// ********* END
+
 		kafkaManager = new KafkaManager();
 
 		statefulSetName = PropertiesManager.getInstance().getProperty("statefulSetName");
