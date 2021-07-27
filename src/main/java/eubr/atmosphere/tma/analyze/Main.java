@@ -38,12 +38,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		String monitoredPods = PropertiesManager.getInstance().getProperty("monitoredPods");
-		LOGGER.info("monitoredPods: {}", monitoredPods);
 		DataManager dataManager = new DataManager(monitoredPods);
 		kafkaManager = new KafkaManager();
 
 		statefulSetName = PropertiesManager.getInstance().getProperty("statefulSetName");
-		LOGGER.info("statefulSetName: {}", statefulSetName);
+
 		int currentDay = 0;
 
 		while (true) {

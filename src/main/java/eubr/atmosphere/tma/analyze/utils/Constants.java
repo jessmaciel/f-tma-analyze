@@ -22,16 +22,12 @@ public final class Constants {
     public static final int ExistenceOfPolicyDescriptionId = 80004;
     public static final int ExistenceOfSecurityControlDescriptionId = 80005 ;
     
-    // alterei o nodeId, mas nao sei se pensei certo
-    // public static final int nodeId = 11; // worker node
-    public static final int nodeId = 25; // worker node
+    public static final int nodeId = 11; // worker node
 
     // Metrics related to the node
-    // public static final Double maxCPU = 4165.0;
-    // public static final Double maxMemory = 16000.0;
-    public static final Double maxCPU = 6000.0;
-    public static final Double maxMemory = 30000.0;
-
+    public static final Double maxCPU = 4165.0;
+    public static final Double maxMemory = 16000.0;
+    
     // Metric Information about the Scores
     // TODO complete the remaining scores (Security from Dell)
     // TODO insert the IDs in the database and update here
