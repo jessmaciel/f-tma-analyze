@@ -27,9 +27,9 @@ public final class Constants {
     public static final int nodeId = 25; // worker node
 
     // Metrics related to the node
-    // public static final Double maxCPU = 4165.0;
+    // public static final Double maxCPU = 4165.0; 
     // public static final Double maxMemory = 16000.0;
-    public static final Double maxCPU = 6000.0;
+    public static final Double maxCPU = 6000000000.0; //metrics is in nano, not in milli
     public static final Double maxMemory = 30000.0;
     
     // Metric Information about the Scores
